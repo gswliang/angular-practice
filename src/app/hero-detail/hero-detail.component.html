@@ -1,0 +1,15 @@
+<div *ngIf="hero">
+
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">Hero name: </label>
+      <input id="hero-name" [value]="hero.name" (change)="nameChange($event)" placeholder="name">
+    </div>
+    <p >{{test}}</p>
+  </div>
+
+  <button (click)=goBack()>Back</button>
+
+
+
