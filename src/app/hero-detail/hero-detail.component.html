@@ -4,12 +4,12 @@
     <div><span>id: </span>{{hero.id}}</div>
     <div>
       <label for="hero-name">Hero name: </label>
-      <input id="hero-name" [value]="hero.name" (change)="nameChange($event)" placeholder="name">
+      <input id="hero-name" [(ngModel)]='hero.name' placeholder="name">
     </div>
-    <p >{{test}}</p>
   </div>
 
-  <button (click)=goBack()>Back</button>
+  <button (click)= goBack() >Back</button>
+  <button (click)= save() >Save</button>
 
 
 
